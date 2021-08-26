@@ -14,7 +14,20 @@
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Form</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        <ion-item>
+          <ion-label>Select</ion-label>
+          <ion-select [(ngModel)]="selectedOption">
+            <ion-select-option *ngFor="let option of options" [value]="option"> {{ option.value }} </ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-button (click)="showModal()" color="success">Success</ion-button>
+      </ion-card-content>
+    </ion-card>  
   </div>
 </ion-content>

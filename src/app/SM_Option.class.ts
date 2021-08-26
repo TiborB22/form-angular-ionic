@@ -1,4 +1,4 @@
 export class SM_Option {
-    constructor(public key:string, public value:string) {
+    constructor(public id:number, public value:string) {
     }	
 } 

@@ -11,9 +11,9 @@ import { SM_Option } from '../SM_Option.class';
 })
 export class HomePage {
   options = [
-    new SM_Option('1', 'Név1'),
-    new SM_Option('2', 'Név2'),
-    new SM_Option('3', 'Név3'),
+    new SM_Option(1, 'Név1'),
+    new SM_Option(2, 'Név2'),
+    new SM_Option(3, 'Név3'),
   ];
   constructor(private modalCtrl: ModalController) {
 
